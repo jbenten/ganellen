@@ -427,7 +427,7 @@ nav ul, nav ol { margin: 0; }
 
 .footer-alignment-split {
   #footerBlock { width: 45%; float: left; }
-
+  #bottomNav { width: 45%; float: right;
     .foot-nav { float: right;
       li { float: right; }
     }
@@ -435,8 +435,11 @@ nav ul, nav ol { margin: 0; }
 }
 
 .footer-alignment-center {
-  #footerBlock, { width: 100%; float: none; text-align: left; color: #ffffff; background-color: #003473; font-size: 10px !important; line-height: normal !important; }
-  
+  #footerBlock, #bottomNav { width: 100%; float: none; text-align: left; color: #ffffff; background-color: #003473; font-size: 10px !important; line-height: normal !important; }
+  #bottomNav { overflow: hidden;
+    .foot-nav { width: auto; float: none;
+      ul { margin: 0 auto; text-align: center; margin-bottom: @vgrid;
+        li {float: none; display: inline-block; }
       }
     }
   }
